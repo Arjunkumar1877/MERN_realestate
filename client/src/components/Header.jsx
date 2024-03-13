@@ -13,7 +13,7 @@ function Header() {
     e.preventDefault();
 
     const urlParms = new URLSearchParams(window.location.search);
-    urlParms.set("setTerms", searchTerm);
+    urlParms.set("searchTerm", searchTerm);
     const searchQuery = urlParms.toString();
     navigate(`/search?${searchQuery}`);
   }
