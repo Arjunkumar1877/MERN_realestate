@@ -32,7 +32,7 @@ function Contact({ listing }) {
     return (
         <>{landload && (
             <div className='flex flex-col gap-2 '>
-                <p> Contact: <span className='font-semi'>{landload.username}</span>  for <span className=''>{listing.name.toLowerCase()}</span> </p>
+                <p> Contact: <span className='font-semibold'>{landload.username}</span>  for <span className=''>{listing.name.toLowerCase()}</span> </p>
                 <textarea name="message" id="message" rows="2" value={message} onChange={onChange} placeholder='Enter your message here...' className='w-full border border-gray-400 rounded-lg'></textarea>
 
                 <Link to={`mailto:${landload.email}?subject=Regarding ${listing.name}&body=${message}`} className='bg-slate-700 text-white text-center p-3  uppercase rounded-lg hover:opacity-95'>
