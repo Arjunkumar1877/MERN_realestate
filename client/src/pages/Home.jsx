@@ -36,7 +36,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="bg-gradient-to-b from-green-950 via-green-900 to-black-900 min-h-screen">
+    <div className="bg-gradient-to-b from-green-950 via-green-900 to-slate-900 min-h-screen">
       {/* Top section */}
       <div className="container mx-auto px-4 py-12 text-center">
         <h1 className="text-4xl lg:text-6xl font-bold text-white mb-4">

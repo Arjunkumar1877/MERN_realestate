@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MdLocationOn } from 'react-icons/md';
+import { MdLocationOn, MdHotel, MdHotTub } from 'react-icons/md'; // Importing icons for bed and bath
 
 function ListingItems({ list }) {
   return (
@@ -27,10 +27,12 @@ function ListingItems({ list }) {
             {list.type === 'rent' && ' /month'}
           </p>
           <div className="flex justify-between mt-2">
-            <div className="text-gray-700 font-semibold">
+            <div className="flex items-center text-gray-700 font-semibold">
+              <MdHotel className="h-4 w-4 mr-1" /> 
               {list.bedrooms} {list.bedrooms > 1 ? 'beds' : 'bed'}
             </div>
-            <div className="text-gray-700 font-semibold">
+            <div className="flex items-center text-gray-700 font-semibold">
+              <MdHotTub className="h-4 w-4 mr-1" /> 
               {list.bathrooms} {list.bathrooms > 1 ? 'baths' : 'bath'}
             </div>
           </div>
