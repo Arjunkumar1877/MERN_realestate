@@ -3,10 +3,10 @@ import React from 'react';
 function About() {
   return (
     <div className="py-20 px-4 max-w-6xl mx-auto">
-      <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-gray-900">About Arjun Estate</h1>
+      <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-gray-900">About webEstates</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="flex items-center justify-center">
-          <img src="/images/about_image.jpg" alt="About Arjun Estate" className="rounded-lg shadow-lg" />
+          <img src="https://sigmasoftwares.org/img/realesate.png" alt="About Arjun Estate" className="rounded-lg shadow-lg" />
         </div>
         <div className="flex flex-col justify-center">
           <p className="mb-6 text-lg text-gray-700 leading-relaxed">
